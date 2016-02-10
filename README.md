@@ -41,10 +41,10 @@ Writing styles with Sass is a pure pleasure. We've structured React's components
 #### Bourbon
 > A simple and lightweight mixin library for Sass.
 
-This library provides a ton of awesome mixins, like prefixes for various properties, which really simplify cross-browser development. Make sure you have a look at (Bourbon docs)[http://bourbon.io/docs/] to understand how much this library really does in terms of simplifying styles building.
+This library provides a ton of awesome mixins, like prefixes for various properties, which really simplify cross-browser development. Make sure you have a look at [Bourbon docs](http://bourbon.io/docs/) to understand how much this library really does in terms of simplifying styles building.
 
 #### Colors
-The color variables are defined in `_constant-colors.scss` file. The reason for its name is that we also include skin file with colors, which are not constant per page. We've also included `_materialize-color.scss` to access the `color('name', 'shade')` function, which is provided by Materialize's source and allows you to easily use the (Material design palette)[materializecss.com/color.html#palette].
+The color variables are defined in `_constant-colors.scss` file. The reason for its name is that we also include skin file with colors, which are not constant per page. We've also included `_materialize-color.scss` to access the `color('name', 'shade')` function, which is provided by Materialize's source and allows you to easily use the [Material design palette](materializecss.com/color.html#palette).
 
 #### Media query ranges
 You can define your own media query ranges for small, middle and large displays. The variables are defined in `_media-query-ranges.scss`.
@@ -62,12 +62,12 @@ The `block vars` contains the body class declaration and the form type (human or
 ### Package managers
 
 #### npm
-(npm)[https://www.npmjs.com/] is a famous package manager on top of Node.js. Of course, you're going to need (Node.js)[https://nodejs.org/en/] installed as well. Fortunately, it's relatively simple to do that, as you have to (download the installer)[https://nodejs.org/en/download/] and run it. We've used this to define our dev dependecies, those we need in development process. You can see them in `package.json`.
+[npm](https://www.npmjs.com/) is a famous package manager on top of Node.js. Of course, you're going to need [Node.js](https://nodejs.org/en/) installed as well. Fortunately, it's relatively simple to do that, as you have to [download the installer](https://nodejs.org/en/download/) and run it. We've used this to define our dev dependecies, those we need in development process. You can see them in `package.json`.
 
 Run `npm install` to install all of the dev dependencies.
 
 #### Bower
-(Bower)[http://bower.io/] is another package manager and we've used it to define our non-dev dependencies. Those that are required for the theme to function. The dependecies are listed in `bower.json`.
+[Bower](http://bower.io/) is another package manager and we've used it to define our non-dev dependencies. Those that are required for the theme to function. The dependecies are listed in `bower.json`.
 
 Run `bower install` to install all of dependencies.
 
@@ -77,7 +77,7 @@ Gulp does so many things. First, it allows us to compile our source code into us
 #### Installation
 Gulp is installed via npm.
 
-Following the (Getting started with Gulp)[https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md] guide, run `npm rm --global gulp` to install it.
+Following the [Getting started with Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) guide, run `npm rm --global gulp` to install it.
 
 It also ensures you're not going to have any conflicts with the previous version of Gulp.
 
