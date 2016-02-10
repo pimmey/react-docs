@@ -168,7 +168,7 @@ There's another config file, but this time it's located in `assets/config/` dire
 Besides that you will configure your location to show on Google map. There you will also optionally include a marker and a path to the [SnazzyMaps](https://snazzymaps.com) configuration file. Make sure you place that file inside of the `assets/config/` directory.
 
 ## Ajax MailChimp subscription
-First, I'd like you to learn about via the [original repository](https://github.com/scdoshi/jquery-ajaxchimp). There you can find a relatively simple guide on how to make the whole thing work.
+First, check out the [original repository](https://github.com/scdoshi/jquery-ajaxchimp). There you can find a relatively simple guide on how to make the whole thing work.
 
 Then you can also follow my guide to customise the form and give it a better look. As you choose the embedded form in your list category it will have some code you will need to remove:
 - The line that says `<link href="//cdn-images.mailchimp.com/embedcode/slim-*.css" rel="stylesheet" type="text/css">`
