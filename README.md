@@ -88,13 +88,13 @@ There's a number of plugins Gulp uses to run the required tasks, you can see tho
 The tasks themselves are pretty self-explanatory, we've also made sure to comment the file properly. There are:
 - `gulp sass` to build `react.css` from `react.scss`, as well as compile `linea.css` from `linea.scss`, using source maps.
 - `gulp sass:production` to build `react.min.css`, which is optimised with cssnano and css-mqpacker
-- `gulp jade` to build the html files, located in `build/` directory. You need to specify which files you want to compile. This task also beautifies the html, making it more readable and easier to modify
+- `gulp jade` to build the html files. You need to specify which files you want to compile. This task also beautifies the html, making it more readable and easier to modify
 - `gulp watch` that watches for the changes in your scss files, as well as jade files and runs appropriate commands (`sass` and `jade`) accordingly
 
 ## The layout
 The theme is based on block layout. Or block grid, you can call it whatever you like. The fact is, it gives the page this smooth, measured look, unlike masonry grid, which might look a bit messy sometimes. To create these blocks you must follow a defined structure.
 
-First of all, you need to use [Materialize's grid](http://materializecss.com/grid.html) to define the width of your block. Usually you'd start with a row use `col s12 l6` in order to make it full width on small devices and half width for medium and large screens.
+First of all, you need to use [Materialize's grid](http://materializecss.com/grid.html) to define the width of your block. Usually you'd start with a row and use a div with `col s12 l6` class in order to make it full width on small devices and half width for medium and large screens.
 
 Then include a div with a corresponding class (`rectangle`, `rectangle-50` or `square`), which will have an image stretch to its whole size (via `background-size: cover`) and finally a div contaiing your content. The whole thing would look like this:
 ```html
@@ -153,7 +153,61 @@ You can also add class `white-text` to make it light, in case you have a dark ba
 ```
 - Modal content, the part where you actually include everything else. It can be anything really. Use block layouts, include texts, quotes, images, videos, etc. Don't forget to include Materialize's grid divs, like `<div class="row">` and `<div class="col s12 m8 l6">` to ensure proper spacing and alignments.
 
+## Contact forms
+This theme gives you an ability to choose from two types of form. A "human" version and a classic form. If you're using Jade, just include the wanted form inside of your `block vars` by specifying the form type:
+```jade
+- var formType = 'human'
+```
 
+### PHP mailer
+In order to make the form work and send you the messages you need to configure it. The config file is placed in `mailer/` directory. Include all of the required information for the PHP mailer to do its magic. You can also specify the email template color in that configuration.
 
+## JavaScript configuration
+There's another config file, but this time it's located in `assets/config/` directory. It allows you to modify the [Toast](http://materializecss.com/dialogs.html) messages and their dismissal time.
 
+Besides that you will configure your location to show on Google map. There you will also optionally include a marker and a path to the [SnazzyMaps](https://snazzymaps.com) configuration file. Make sure you place that file inside of the `assets/config/` directory.
+
+## Ajax MailChimp subscribtion
+First, I'd like you to learn about via the [original repository](https://github.com/scdoshi/jquery-ajaxchimp). There you can find a relatively simple guide on how to make the whole thing work.
+
+Then you can also follow my guide to customise the form and give it a better look. As you choose the embedded form in your list category it will have some code you will need to remove:
+- The line that says `<link href="//cdn-images.mailchimp.com/embedcode/slim-*.css" rel="stylesheet" type="text/css">`
+- The inline styles `<style type="text/css">...</style>`
+- Optionally, you can remove the label `<label for="mce-EMAIL">Subscribe to our mailing list</label>`
+Then, you will have to add the following classes:
+- `center` to the `div#mce-EMAIL`
+- `btn btn-large btn-flat waves-effect waves-light` to `input#mc-embedded-subscribe`
+
+That's it, you should now have a working and styling subscription form.
+
+## Customising the hero animations
+Feel free to customise any of the hero sections. Most of them allow you to change the colors as well as behaviours and other configurations. 
+
+Besides that, you can customise the `<h1>` title, the styles for those are found in the `src/sass/skins/*.scss` files or the `assets/css/react.css`, if you prefer to work with the compiled version.
+
+Now, let's walk through each and every hero section to see what and how exactly you can customise those.
+
+### Combustion
+The configuration files are `assets/js/combustion-*.js`. You can customise the following parameters:
+- Background color
+- Bloom
+- Draw blur
+- Red factor
+- Blue factor
+- Move factor
+- Amount of planets
+
+It's recommended not to change anything else besides those variables.
+
+### Fuzzy
+Fuzzy doesn't offer a lot of flexibility JavaScript-wise, but you can change the background color by changing the property for `div.hero`.
+
+### Ring
+Ring is a pure CSS animation, so you can head over to the `src/sass/skins/_ring-*.scss` files and change the predefined variables - ring colors and background color. The dimensions are set as the default ones, but they are going to be overwritten by JavaScript in order to fit the screen better.
+
+### Tunnel
+Tunnel also doesn't offer that much customising. You can only play around with the title.
+
+### Waves
+Check out [Sine Waves repository](https://github.com/isuttell/sine-waves) to learn more about how you can customise those.
 
