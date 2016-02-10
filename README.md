@@ -174,11 +174,12 @@ Then you can also follow my guide to customise the form and give it a better loo
 - The line that says `<link href="//cdn-images.mailchimp.com/embedcode/slim-*.css" rel="stylesheet" type="text/css">`
 - The inline styles `<style type="text/css">...</style>`
 - Optionally, you can remove the label `<label for="mce-EMAIL">Subscribe to our mailing list</label>`
+
 Then, you will have to add the following classes:
 - `center` to the `div#mce-EMAIL`
 - `btn btn-large btn-flat waves-effect waves-light` to `input#mc-embedded-subscribe`
 
-That's it, you should now have a working and styling subscription form.
+That's it, you should now have a working and styled subscription form.
 
 ## Customising the hero animations
 Feel free to customise any of the hero sections. Most of them allow you to change the colors as well as behaviours and other configurations. 
@@ -209,5 +210,5 @@ Ring is a pure CSS animation, so you can head over to the `src/sass/skins/_ring-
 Tunnel also doesn't offer that much customising. You can only play around with the title.
 
 ### Waves
-Check out [Sine Waves repository](https://github.com/isuttell/sine-waves) to learn more about how you can customise those.
+Check out [Sine Waves repository](https://github.com/isuttell/sine-waves) to learn more about how you can customise those. There's plenty of stuff you can change and don't forget about the background color modification via styles.
 
