@@ -5,7 +5,7 @@ Welcome! First of all, thank you for purchasing this theme. We prepared a throug
 This theme is built using [Materialize](http://materializecss.com/), a modern responsive front-end framework based on Material Design. Make sure you visit their web-site to learn more about it. Feel free to use all of the elements that framework provides.
 
 ## Requirements
-This theme requires a pretty basic setup. In fact, the only thing your server needs is PHP installed, which is usually 99.9% of the cases. If you happend to be that 0.1%, please contact your hosting administrator and let him know you need PHP installed on your server. PHP is needed for the Contact form to function, but if you don't need that, any kind of hosting will do the trick.
+This theme requires a pretty basic setup. In fact, the only thing your server needs is PHP installed, which is usually 99.9% of the cases. If you happen to be that 0.1%, please contact your hosting administrator and let him know you need PHP installed on your server. PHP is needed for the Contact form to function, but if you don't need that, any kind of hosting will do the trick.
 
 Wata works great in all of the modern browsers, as well as mobile browsers. It supports Internet Explorer 10+, except for some advanced features, but we've written fallbacks for that.
 
@@ -31,7 +31,7 @@ Installing our theme is extremely simple — just upload all the files to your s
 ```
 
 ## Development process
-The theme was programmed using two wonderful technologies - [Sass](http://sass-lang.com/) for the styles and [Jade](http://jade-lang.com/) to generate HTML files. As well as [Gulp](http://gulpjs.com/) to help manage those techonologies. Gulp is also used to help optimise your resources for the production purpose.
+The theme was programmed using two wonderful technologies - [Sass](http://sass-lang.com/) for the styles and [Jade](http://jade-lang.com/) to generate HTML files. As well as [Gulp](http://gulpjs.com/) to help manage those technologies. Gulp is also used to help optimise your resources for the production purpose.
 
 ### Sass
 > Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
@@ -62,12 +62,12 @@ The `block vars` contains the body class declaration and the form type (human or
 ### Package managers
 
 #### npm
-[npm](https://www.npmjs.com/) is a famous package manager on top of Node.js. Of course, you're going to need [Node.js](https://nodejs.org/en/) installed as well. Fortunately, it's relatively simple to do that, as you have to [download the installer](https://nodejs.org/en/download/) and run it. We've used this to define our dev dependecies, those we need in development process. You can see them in `package.json`.
+[npm](https://www.npmjs.com/) is a famous package manager on top of Node.js. Of course, you're going to need [Node.js](https://nodejs.org/en/) installed as well. Fortunately, it's relatively simple to do that, as you have to [download the installer](https://nodejs.org/en/download/) and run it. We've used this to define our dev dependencies, those we need in development process. You can see them in `package.json`.
 
 Run `npm install` to install all of the dev dependencies.
 
 #### Bower
-[Bower](http://bower.io/) is another package manager and we've used it to define our non-dev dependencies. Those that are required for the theme to function. The dependecies are listed in `bower.json`.
+[Bower](http://bower.io/) is another package manager and we've used it to define our non-dev dependencies. Those that are required for the theme to function. The dependencies are listed in `bower.json`.
 
 Run `bower install` to install all of dependencies.
 
@@ -96,7 +96,7 @@ The theme is based on block layout. Or block grid, you can call it whatever you 
 
 First of all, you need to use [Materialize's grid](http://materializecss.com/grid.html) to define the width of your block. Usually you'd start with a row and use a div with `col s12 l6` class in order to make it full width on small devices and half width for medium and large screens.
 
-Then include a div with a corresponding class (`rectangle`, `rectangle-50` or `square`), which will have an image stretch to its whole size (via `background-size: cover`) and finally a div contaiing your content. The whole thing would look like this:
+Then include a div with a corresponding class (`rectangle`, `rectangle-50` or `square`), which will have an image stretch to its whole size (via `background-size: cover`) and finally a div containing your content. The whole thing would look like this:
 ```html
 <div class="row">
   <div class="col s12 l6">
@@ -167,7 +167,7 @@ There's another config file, but this time it's located in `assets/config/` dire
 
 Besides that you will configure your location to show on Google map. There you will also optionally include a marker and a path to the [SnazzyMaps](https://snazzymaps.com) configuration file. Make sure you place that file inside of the `assets/config/` directory.
 
-## Ajax MailChimp subscribtion
+## Ajax MailChimp subscription
 First, I'd like you to learn about via the [original repository](https://github.com/scdoshi/jquery-ajaxchimp). There you can find a relatively simple guide on how to make the whole thing work.
 
 Then you can also follow my guide to customise the form and give it a better look. As you choose the embedded form in your list category it will have some code you will need to remove:
