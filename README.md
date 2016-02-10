@@ -91,3 +91,69 @@ The tasks themselves are pretty self-explanatory, we've also made sure to commen
 - `gulp jade` to build the html files, located in `build/` directory. You need to specify which files you want to compile. This task also beautifies the html, making it more readable and easier to modify
 - `gulp watch` that watches for the changes in your scss files, as well as jade files and runs appropriate commands (`sass` and `jade`) accordingly
 
+## The layout
+The theme is based on block layout. Or block grid, you can call it whatever you like. The fact is, it gives the page this smooth, measured look, unlike masonry grid, which might look a bit messy sometimes. To create these blocks you must follow a defined structure.
+
+First of all, you need to use [Materialize's grid](http://materializecss.com/grid.html) to define the width of your block. Usually you'd start with a row use `col s12 l6` in order to make it full width on small devices and half width for medium and large screens.
+
+Then include a div with a corresponding class (`rectangle`, `rectangle-50` or `square`), which will have an image stretch to its whole size (via `background-size: cover`) and finally a div contaiing your content. The whole thing would look like this:
+```html
+<div class="row">
+  <div class="col s12 l6">
+    <div class="rectangle" style="background-image: url(path/to/image)">
+      <div class="content">
+        Your awesome content
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Extending the layout
+You can extend those classes and create your own shapes, say a vertical rectangle. All you need to do is define it in your styles, like this:
+```css
+.vertical-rectangle {
+  padding-bottom: 200%; /* will create a rectangle with height = width * 2
+}
+```
+
+### Modals
+This theme includes a lot of modals for secondary content, like project case study or blog post, as well as detailed modal about your team members.
+
+While occupying quite a lot of rows of code, the overall structure is rather simple. There are two parts of modal.
+
+#### Modal trigger
+This will be an `<a>` element, which will act like a layout block. One thing you should notice though, is that it requires `modal-trigger` class and its `href` should point to the `id` of corresponding modal.
+
+Let's take the first project as an example:
+```html
+<a href="#green-lamp" class="col s12 padding-bottom modal-trigger"> <!-- notice the .modal-trigger class and #green-lamp href -->
+    <div style="background-image: url(./assets/images/work/lamp.png)" class="rectangle-50">
+        <div class="content valign-wrapper center">
+            <div>Green Lamp</div>
+        </div>
+    </div>
+</a>
+```
+
+#### Modal window
+The modal itself consists of several elements. First of all, it requires the `id`, which is being used in your trigger's `href`, as well as `modal` and `bottom-sheet` classes.
+
+Besides that, the inner structure must include the following elements:
+- A close button with particular classes – `modal-close` and `absolute`:
+```html
+<div class="modal-close absolute">&times;</div>
+```
+You can also add class `white-text` to make it light, in case you have a dark background.
+- Modal cover, the div which also uses previously mentioned block layout:
+```html
+<div class="modal-cover">
+    <div style="background-image: url(./assets/images/work/lamp.png)" class="rectangle-50"></div>
+</div>
+```
+- Modal content, the part where you actually include everything else. It can be anything really. Use block layouts, include texts, quotes, images, videos, etc. Don't forget to include Materialize's grid divs, like `<div class="row">` and `<div class="col s12 m8 l6">` to ensure proper spacing and alignments.
+
+
+
+
+
