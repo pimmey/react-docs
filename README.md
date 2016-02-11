@@ -211,3 +211,14 @@ The tasks themselves are pretty self-explanatory, we've also made sure to commen
 - `gulp sass:production` to build `react.min.css`, which is optimised with cssnano and css-mqpacker
 - `gulp jade` to build the html files. You need to specify which files you want to compile. This task also beautifies the html, making it more readable and easier to modify
 - `gulp watch` that watches for the changes in your scss files, as well as jade files and runs appropriate commands (`sass` and `jade`) accordingly
+
+## Code quality tools
+To ensure the consistency of code as well as its best practises we've decided to use two linters. [ESLint](http://eslint.org) for JavaScript and [scss-lint](https://github.com/brigade/scss-lint) for Sass.
+
+### ESLint
+This linter is very powerful and configurable. Write JavaScript like a pro, ESLint will give you hints and mark obvious errors. Check out the configuration file – `.eslintrc` to see how we configured this project.
+
+### scss-lint
+Writing styles can be quite difficult. Do you always remember the correct order of your properties, what goes first, an `@include` or `position`? Can you track whether the rules have been rightly nested or if you've used correct spacing? scss-lint is the answer :relieved: 
+
+See our configuration file – `.scss-lint.yml`.
