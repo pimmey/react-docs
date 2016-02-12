@@ -9,7 +9,7 @@ This theme requires a pretty basic setup. In fact, the only thing your server ne
 
 Wata works great in all of the modern browsers, as well as mobile browsers. It supports Internet Explorer 10+, except for some advanced features, but we've written fallbacks for that.
 
-## Installation
+## Theme installation
 Installing our theme is extremely simple — just upload all the files to your server. In fact, you can test your theme locally as well, except for the contact form functionality, which requires a server side language.
 
 ## File structure
@@ -96,7 +96,7 @@ You can also add class `white-text` to make it light, in case you have a dark ba
 ## Contact forms
 This theme gives you an ability to choose from two types of form. A "human" version and a classic form.
 
-### HTML
+### Form via HTML
 If you're not using Jade, you will have to copy the form container you require from one of the skins.
 
 #### Classic
@@ -122,7 +122,7 @@ For human form, you'd need to include these lines, again with obligatory `id="hu
 ```
 There's no requirement for the `<form>` element for the human one. 
 
-### Jade
+### Form via Jade
 If you're using Jade, just include the wanted form inside of your `block vars` by specifying the form type:
 ```jade
 - var formType = 'human'
@@ -225,7 +225,7 @@ Run `bower install` to install all of dependencies.
 ### Gulp
 Gulp does so many things. First, it allows us to compile our source code into usable assets. Secondly, it optimises those assets for the production. All of the commands and configurations are located in `gulpfile.js`.
 
-#### Installation
+#### Gulp Installation
 Gulp is installed via npm.
 
 Following the [Getting started with Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) guide, run `npm rm --global gulp` to install it.
