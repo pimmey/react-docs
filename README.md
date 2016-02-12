@@ -245,7 +245,7 @@ The tasks themselves are pretty self-explanatory, we've also made sure to commen
 - `gulp jade` to build the html files. You need to specify which files you want to compile. This task also beautifies the html, making it more readable and easier to modify
 - `gulp watch` that watches for the changes in your scss files, as well as jade files and runs appropriate commands (`sass` and `jade`) accordingly
 - `gulp build:scripts` to create `build.min.js`, consisted of the majority of JavaScript files. The file is placed in `assets/build/` directory.
-- `gulp minify-skin-scripts` minifies the scripts in `assets/js/skins` and places them in `assets/js/skins/min` directory
+- `gulp minify-skin-scripts` minifies the scripts in `assets/js/skins/` and places them in `assets/js/skins/min/` directory
 - `gulp imagemin` to optimise the images found in `assets/images/` directory
 
 ## Code quality tools
