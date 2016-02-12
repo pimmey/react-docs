@@ -241,9 +241,11 @@ There's a number of plugins Gulp uses to run the required tasks, you can see tho
 #### Tasks
 The tasks themselves are pretty self-explanatory, we've also made sure to comment the file properly. There are:
 - `gulp sass` to build `react.css` from `react.scss`, as well as compile `linea.css` from `linea.scss`, using source maps.
-- `gulp sass:production` to build `react.min.css`, which is optimised with cssnano and css-mqpacker
+- `gulp build:css` to create `build.min.css`, which is optimised with cssnano and css-mqpacker. The file is placed in `assets/build/` directory. _This command depends on `gulp sass`, run it first.
 - `gulp jade` to build the html files. You need to specify which files you want to compile. This task also beautifies the html, making it more readable and easier to modify
 - `gulp watch` that watches for the changes in your scss files, as well as jade files and runs appropriate commands (`sass` and `jade`) accordingly
+- `gulp build:scripts` to create `build.min.js`, consisted of the majority of JavaScript files. The file is placed in `assets/build/` directory.
+- `gulp minify-skin-scripts` minifies the scripts in `assets/js/skins` and places them in `assets/js/skins/min` directory
 - `gulp imagemin` to optimise the images found in `assets/images/` directory
 
 ## Code quality tools
