@@ -222,6 +222,9 @@ Run `npm install` to install all of the dev dependencies.
 
 Run `bower install` to install all of dependencies.
 
+#### Composer
+[Composer](https://getcomposer.org) is used to fetch [PHPMailer](https://github.com/PHPMailer/PHPMailer). Feel free to add any PHP dependecies via this package manager.
+
 ### Gulp
 Gulp does so many things. First, it allows us to compile our source code into usable assets. Secondly, it optimises those assets for the production. All of the commands and configurations are located in `gulpfile.js`.
 
