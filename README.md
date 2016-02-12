@@ -112,7 +112,7 @@ For classic form use the following, note `id="classic-form"`, that is required:
 ```
 
 #### Human
-For human form, you'd need to include these lines, again with obligatory `id="#human-form`:
+For human form, you'd need to include these lines, again with obligatory `id="#human-form"`:
 ```html
 <div class="col s12 l8 offset-l2">
     <div id="human-form" class="card-panel center hoverable">
@@ -122,7 +122,7 @@ For human form, you'd need to include these lines, again with obligatory `id="#h
 ```
 There's no requirement for the `<form>` element for the human one. 
 
-## Jade
+### Jade
 If you're using Jade, just include the wanted form inside of your `block vars` by specifying the form type:
 ```jade
 - var formType = 'human'
