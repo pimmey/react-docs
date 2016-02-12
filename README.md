@@ -112,7 +112,7 @@ For classic form use the following, note `id="classic-form"`, that is required:
 ```
 
 #### Human
-For human form, you'd need to include these lines, again with obligatory `id="#human-form"`:
+For human form, you'd need to include these lines, again with obligatory `id="human-form"`:
 ```html
 <div class="col s12 l8 offset-l2">
     <div id="human-form" class="card-panel center hoverable">
