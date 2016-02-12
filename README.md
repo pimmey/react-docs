@@ -244,7 +244,7 @@ The tasks themselves are pretty self-explanatory, we've also made sure to commen
 - `gulp imagemin` to optimise the images found in `assets/images/` directory
 
 ## Code quality tools
-To ensure the consistency of code as well as its best practises we've decided to use two linters. [ESLint](http://eslint.org) for JavaScript and [scss-lint](https://github.com/brigade/scss-lint) for Sass.
+To ensure the consistency of code as well as its best practices we've decided to use linters. [ESLint](http://eslint.org) for JavaScript and [scss-lint](https://github.com/brigade/scss-lint) for Sass.
 
 ### ESLint
 This linter is very powerful and configurable. Write JavaScript like a pro, ESLint will give you hints and mark obvious errors. Check out the configuration file – `.eslintrc` to see how we configured this project.
