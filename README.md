@@ -94,7 +94,36 @@ You can also add class `white-text` to make it light, in case you have a dark ba
 - Modal content, the part where you actually include everything else. It can be anything really. Use block layouts, include texts, quotes, images, videos, etc. Don't forget to include Materialize's grid divs, like `<div class="row">` and `<div class="col s12 m8 l6">` to ensure proper spacing and alignments.
 
 ## Contact forms
-This theme gives you an ability to choose from two types of form. A "human" version and a classic form. If you're using Jade, just include the wanted form inside of your `block vars` by specifying the form type:
+This theme gives you an ability to choose from two types of form. A "human" version and a classic form.
+
+### HTML
+If you're not using Jade, you will have to copy the form container you require from one of the skins.
+
+#### Classic
+For classic form use the following, note `id="classic-form"`, that is required:
+```html
+<div class="col s12 l8 offset-l2">
+    <div class="card-panel center hoverable">
+        <form id="classic-form" action="mailer/mailer.php" novalidate autocomplete="off" class="row">
+          ...
+        </form>
+    </div>
+</div>    
+```
+
+#### Human
+For human form, you'd need to include these lines, again with obligatory `id="#human-form`:
+```html
+<div class="col s12 l8 offset-l2">
+    <div id="human-form" class="card-panel center hoverable">
+      ...  
+    </div>
+</div>
+```
+There's no requirement for the `<form>` element for the human one. 
+
+## Jade
+If you're using Jade, just include the wanted form inside of your `block vars` by specifying the form type:
 ```jade
 - var formType = 'human'
 ```
