@@ -225,7 +225,7 @@ Run `bower install` to install all of dependencies.
 ### Gulp
 Gulp does so many things. First, it allows us to compile our source code into usable assets. Secondly, it optimises those assets for the production. All of the commands and configurations are located in `gulpfile.js`.
 
-#### Gulp Installation
+#### Gulp installation
 Gulp is installed via npm.
 
 Following the [Getting started with Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) guide, run `npm rm --global gulp` to install it.
