@@ -55,6 +55,7 @@ You can extend those classes and create your own shapes, say a vertical rectangl
   padding-bottom: 200%; /* will create a rectangle with height = width * 2
 }
 ```
+There's no need to specify height of those shapes, since padding will do the trick and size them dynamically, depending on the width. Think of it as of a proportion: `padding-bottom: 100%` will give you a 1:1 square, `padding-bottom: 50%` will give you a 1:2 rectangle.
 
 ### Modals
 This theme includes a lot of modals for secondary content, like project case study or blog post, as well as detailed modal about your team members.
@@ -211,6 +212,7 @@ The tasks themselves are pretty self-explanatory, we've also made sure to commen
 - `gulp sass:production` to build `react.min.css`, which is optimised with cssnano and css-mqpacker
 - `gulp jade` to build the html files. You need to specify which files you want to compile. This task also beautifies the html, making it more readable and easier to modify
 - `gulp watch` that watches for the changes in your scss files, as well as jade files and runs appropriate commands (`sass` and `jade`) accordingly
+- `gulp imagemin` to optimise the images found in `assets/images/` directory
 
 ## Code quality tools
 To ensure the consistency of code as well as its best practises we've decided to use two linters. [ESLint](http://eslint.org) for JavaScript and [scss-lint](https://github.com/brigade/scss-lint) for Sass.
