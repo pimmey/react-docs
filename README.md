@@ -1,4 +1,4 @@
-# React documentation
+# [React](http://react.pimmey.com) documentation
 ## Introduction
 Welcome! First of all, thank you for purchasing this theme. We prepared a throughout documentation to make your experience as pleasant as possible. We tried to cover every aspect of this theme, however, if you still have any questions or need clarification, feel free to email us via [user's page contact form](http://themeforest.net/user/pimmey#contact?rel=pimmey).
 
