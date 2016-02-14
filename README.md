@@ -181,6 +181,34 @@ Tunnel also doesn't offer that much customising. You can only play around with t
 ### Waves
 Check out [Sine Waves repository](https://github.com/isuttell/sine-waves) to learn more about how you can customise those. There's plenty of stuff you can change and don't forget about the background color modification via styles.
 
+## Spinners
+You can change the spinner simply by changing the class of div inside of a `div.spinner-container`. You can choose from `spinner-*`, where *:
+- double-dot-in
+- dot-in
+- double-dot-stick
+- dot-stick
+- double-dot-out
+- dot-out
+- wave-in
+- double-wave-in
+- huge-wave-in
+- wave-out
+- double-wave-out
+- huge-wave-out
+- double-section-in
+- section-in
+- double-section
+- section
+- double-section-out
+- section-out
+- double-section-far
+- section-far
+
+## Favicons
+Favicons are the icons of your web-site that are displayed on various mobile devices. For example, if someone wants to add your site to their home screen, they will view the icon you include. There are quite a few formats you need to handle, inculding iPhone, iPad, Android devices and Microsoft devices. To help you with this process, you can use a touch icons generator web-site, for example [realfavicongenerator.net](realfavicongenerator.net).
+
+These icons are placed in `/favicons` directory. Make sure you also edit the `manifest.json` and change the `"Name"` to your company's title.
+
 ## Development process
 The theme was programmed using two wonderful technologies - [Sass](http://sass-lang.com/) for the styles and [Jade](http://jade-lang.com/) to generate HTML files. As well as [Gulp](http://gulpjs.com/) to help manage those technologies. Gulp is also used to help optimise your resources for the production purpose.
 
