@@ -207,7 +207,7 @@ You can change the spinner simply by changing the class of div inside of a `div.
 Check them all out [live on Codepen](http://codepen.io/pimmey/pen/OMdqBL).
 
 ## Favicons
-Favicons are the icons of your web-site that are displayed on various mobile devices. For example, if someone wants to add your site to their home screen, they will view the icon you include. There are quite a few formats you need to handle, inculding iPhone, iPad, Android devices and Microsoft devices. To help you with this process, you can use a touch icons generator web-site, for example [realfavicongenerator.net](realfavicongenerator.net).
+Favicons are the icons of your web-site that are displayed on various mobile devices. For example, if someone wants to add your site to their home screen, they will view the icon you include. There are quite a few formats you need to handle, inculding iPhone, iPad, Android devices and Microsoft devices. To help you with this process, you can use a touch icons generator web-site, for example [realfavicongenerator.net](http://realfavicongenerator.net).
 
 These icons are placed in `/favicons` directory. Make sure you also edit the `manifest.json` and change the `"Name"` to your company's title.
 
