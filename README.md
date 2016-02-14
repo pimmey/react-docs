@@ -182,7 +182,7 @@ Tunnel also doesn't offer that much customising. You can only play around with t
 Check out [Sine Waves repository](https://github.com/isuttell/sine-waves) to learn more about how you can customise those. There's plenty of stuff you can change and don't forget about the background color modification via styles.
 
 ## Spinners
-You can change the spinner simply by changing the class of div inside of a `div.spinner-container`. You can choose from `spinner-*`, where *:
+You can change the spinner simply by changing the class of div inside of a `div.spinner-container`. You can choose from `spinner-*`, where `*` equals:
 - double-dot-in
 - dot-in
 - double-dot-stick
@@ -203,6 +203,8 @@ You can change the spinner simply by changing the class of div inside of a `div.
 - section-out
 - double-section-far
 - section-far
+
+Check them all out [live on Codepen](http://codepen.io/pimmey/pen/OMdqBL).
 
 ## Favicons
 Favicons are the icons of your web-site that are displayed on various mobile devices. For example, if someone wants to add your site to their home screen, they will view the icon you include. There are quite a few formats you need to handle, inculding iPhone, iPad, Android devices and Microsoft devices. To help you with this process, you can use a touch icons generator web-site, for example [realfavicongenerator.net](realfavicongenerator.net).
