@@ -15,12 +15,14 @@ Installing our theme is extremely simple — just upload all the files to your s
 ## File structure
 ```
 ├── assets/
+|   ├── build/
 │   ├── config/
 │   ├── css/
 │   ├── font/
 │   ├── images/
 │   ├── js/
-├── build/
+|   |   ├── skins/
+├── favicons/
 ├── libs/
 ├── mailer/
 │   ├── templates/
@@ -29,6 +31,37 @@ Installing our theme is extremely simple — just upload all the files to your s
 │   ├── sass/
 │   |   ├── skins/
 ```
+
+### `assets`
+- `build` contains minified and optimised core `.css` and `.js` files
+- `config` contains general JavaScript config file and [Snazzy Maps](http://snazzymaps.com) styles JSON
+- `css` contains compiled `react.css` and `linea.css`
+- `font` contains the font files
+- `images` contains the page's images, divided by category. Put all of your images in this directory, as that's where they get optimised via [Gulp tasks](#tasks)
+- `js` contains the core JavaScript file as well as a `skins` directory, containing skin specific JavaScript files
+
+### `favicons`
+This directory contains favicons. And a file called `manifest.json`, which you should edit by placing your company's name in it.
+
+### `libs`
+The place for the libraries used in this template.
+
+### `mailer`
+PHPMailer files related are located here. In `templates` directory you'll be able to find the predesigned mail templates.
+
+### `src`
+#### `jade`
+- `./` (i.e. the directory itself) is the home directory of all your `.jade` files, particularly `base.jade` and all of the skin files
+- `layout` contains header and footer layouts
+- `posts` is a directory for the blog posts
+- `projects` is where all your projects and their modals are located
+- `section` contains all the sections, which are later included into `base.jade`
+- `team-modals` contains team modals. Since team members are shown in a carousel, the modals couldn't share the same parent as their triggers. They need to be placed outside of the carousel.
+
+#### `sass`
+- `./` contains the main `react.scss` file as well as all of its components
+- `linea` is where Linea icons source is kept
+- `skins` contains the skin specific styles
 
 ## The layout
 The theme is based on block layout. Or block grid, you can call it whatever you like. The fact is, it gives the page this smooth, measured look, unlike masonry grid, which might look a bit messy sometimes. To create these blocks you must follow a defined structure.
