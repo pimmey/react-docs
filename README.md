@@ -47,7 +47,7 @@ This directory contains favicons. And a file called `manifest.json`, which you s
 The place for the libraries used in this template.
 
 ### `mailer`
-PHPMailer files related are located here. In `templates` directory you'll be able to find the predesigned mail templates.
+PHP files that are needed to make the contact form function are located here. In `templates` directory you'll be able to find the predesigned mail templates.
 
 ### `src`
 #### `jade`
