@@ -85,7 +85,7 @@ Then include a div with a corresponding class (`rectangle`, `rectangle-50` or `s
 You can extend those classes and create your own shapes, say a vertical rectangle. All you need to do is define it in your styles, like this:
 ```css
 .vertical-rectangle {
-  padding-bottom: 200%; /* will create a rectangle with height = width * 2
+  padding-bottom: 200%; /* will create a rectangle with height = width * 2 */
 }
 ```
 There's no need to specify height of those shapes, since padding will do the trick and size them dynamically, depending on the width. Think of it as of a proportion: `padding-bottom: 100%` will give you a 1:1 square, `padding-bottom: 50%` will give you a 1:2 rectangle.
