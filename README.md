@@ -88,7 +88,7 @@ You can extend those classes and create your own shapes, say a vertical rectangl
   padding-bottom: 200%; /* will create a rectangle with height = width * 2 */
 }
 ```
-There's no need to specify height of those shapes, since padding will do the trick and size them dynamically, depending on the width. Think of it as of a proportion: `padding-bottom: 100%` will give you a 1:1 square, `padding-bottom: 50%` will give you a 1:2 rectangle.
+There's no need to specify height of those shapes, since padding will do the trick and size them dynamically, depending on the width. Think of it as of a proportion: `padding-bottom: 100%` will give you a 1:1 square, `padding-bottom: 50%` will give you a 2:1 rectangle.
 
 ### Modals
 This theme includes a lot of modals for secondary content, like project case study or blog post, as well as detailed modal about your team members.
