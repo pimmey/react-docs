@@ -294,7 +294,7 @@ Gulp does so many things. First, it allows us to compile our source code into us
 #### Gulp installation
 Gulp is installed via npm.
 
-Following the [Getting started with Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) guide, run `npm rm --global gulp` to install it.
+Following the [Getting started with Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) guide, run `npm rm --global gulp` to remove any previous versions. Then run `npm install --global gulp-cli` to install it globally or `npm install --save-dev gulp` to install it as a dev dependency of the project. 
 
 It also ensures you're not going to have any conflicts with the previous version of Gulp.
 
